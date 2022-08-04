@@ -1,0 +1,101 @@
+{
+  "users": [
+    {
+      "name": "Anastasia",
+      "email": "anastasia@anastasia.com",
+      "password": "admin",
+      "id": "xc34i0cl6efej2b"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "BofA",
+      "user_id": "xc34i0cl6efej2b",
+      "id": "xc3429cl6efewts"
+    },
+    {
+      "name": "Chase",
+      "user_id": "xc34i0cl6efej2b",
+      "id": "xc344bwl6eff2su"
+    },
+    {
+      "name": "Cash",
+      "user_id": "xc34i0cl6efej2b",
+      "id": "xc34jx8l6effble"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "xc34ex8l6efilov",
+      "type": "income",
+      "name": "Won the lottery",
+      "sum": 1234567,
+      "account_id": "xc3429cl6efewts",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:38:48.654Z"
+    },
+    {
+      "id": "xc34gu0l6efiuyn",
+      "type": "expense",
+      "name": "Dress",
+      "sum": 250,
+      "account_id": "xc3429cl6efewts",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:39:00.670Z"
+    },
+    {
+      "id": "xc34hkkl6efj3vw",
+      "type": "expense",
+      "name": "Guppy fish ",
+      "sum": 5,
+      "account_id": "xc3429cl6efewts",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:39:12.235Z"
+    },
+    {
+      "id": "xc34hisl6efl5fd",
+      "type": "income",
+      "name": "Salary",
+      "sum": 5670,
+      "account_id": "xc344bwl6eff2su",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:40:47.544Z"
+    },
+    {
+      "id": "xc34568l6eflujg",
+      "type": "expense",
+      "name": "Wine",
+      "sum": 15,
+      "account_id": "xc344bwl6eff2su",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:41:20.091Z"
+    },
+    {
+      "id": "xc34338l6efm3ai",
+      "type": "expense",
+      "name": "Cheese",
+      "sum": 78,
+      "account_id": "xc3429cl6efewts",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:41:31.433Z"
+    },
+    {
+      "id": "xc34ljsl6efqxgz",
+      "type": "income",
+      "name": "Sold antique vase",
+      "sum": 987654,
+      "account_id": "xc34jx8l6effble",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:45:17.170Z"
+    },
+    {
+      "id": "xc34lqcl6efsatm",
+      "type": "expense",
+      "name": "Bought antique lamp",
+      "sum": 87654,
+      "account_id": "xc34jx8l6effble",
+      "user_id": "xc34i0cl6efej2b",
+      "created_at": "2022-08-04T02:46:21.129Z"
+    }
+  ]
+}
