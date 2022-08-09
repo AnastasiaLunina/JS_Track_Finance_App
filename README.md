@@ -1,6 +1,6 @@
-# Диплом курса «Базовый JavaScript в браузере»
+# Track Finance App
 
-## Описание
+## Description
 
 Video walkthrough (click the image):
 
