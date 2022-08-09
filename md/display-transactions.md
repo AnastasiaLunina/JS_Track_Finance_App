@@ -201,7 +201,7 @@ page.formatDate( '2019-03-10 03:20:41' ); // 10 марта 2019 г. в 03:20
     <div class="col-md-3">
       <div class="transaction__summ">
       <!--  сумма -->
-          200 <span class="currency">₽</span>
+          <span class="currency">$</span>200 
       </div>
     </div>
     <div class="col-md-2 transaction__controls">

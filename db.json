@@ -5,6 +5,18 @@
       "email": "anastasia@anastasia.com",
       "password": "admin",
       "id": "xc34i0cl6efej2b"
+    },
+    {
+      "name": "a",
+      "email": "a@a.a",
+      "password": "a",
+      "id": "xc34kj4l6lllsbe"
+    },
+    {
+      "name": "test",
+      "email": "test@test.test",
+      "password": "test",
+      "id": "xc34glkl6lm50p2"
     }
   ],
   "accounts": [
@@ -22,6 +34,21 @@
       "name": "Cash",
       "user_id": "xc34i0cl6efej2b",
       "id": "xc34jx8l6effble"
+    },
+    {
+      "name": "vb",
+      "user_id": "xc34kj4l6lllsbe",
+      "id": "xc34cwsl6llmvi1"
+    },
+    {
+      "name": "iop",
+      "user_id": "xc34kj4l6lllsbe",
+      "id": "xc34msol6llxn7i"
+    },
+    {
+      "name": "chase",
+      "user_id": "xc34glkl6lm50p2",
+      "id": "xc34lccl6lm59as"
     }
   ],
   "transactions": [
@@ -96,6 +123,33 @@
       "account_id": "xc34jx8l6effble",
       "user_id": "xc34i0cl6efej2b",
       "created_at": "2022-08-04T02:46:21.129Z"
+    },
+    {
+      "id": "xc344v0l6lln48j",
+      "type": "income",
+      "name": "hg",
+      "sum": 5,
+      "account_id": "xc34cwsl6llmvi1",
+      "user_id": "xc34kj4l6lllsbe",
+      "created_at": "2022-08-09T03:04:40.242Z"
+    },
+    {
+      "id": "xc34klol6lluzm1",
+      "type": "expense",
+      "name": "h",
+      "sum": 6,
+      "account_id": "xc34cwsl6llmvi1",
+      "user_id": "xc34kj4l6lllsbe",
+      "created_at": "2022-08-09T03:10:47.496Z"
+    },
+    {
+      "id": "xc3497gl6llxxez",
+      "type": "expense",
+      "name": "fc",
+      "sum": 6,
+      "account_id": "xc34msol6llxn7i",
+      "user_id": "xc34kj4l6lllsbe",
+      "created_at": "2022-08-09T03:13:04.618Z"
     }
   ]
 }

@@ -2,135 +2,60 @@
 
 ## Описание
 
-Видеодемонстрация и описание (нажмите на изображение):
+Video walkthrough (click the image):
 
 [![BHJ Diploma](https://img.youtube.com/vi/zXOyBIajWsM/0.jpg)](https://www.youtube.com/watch?v=zXOyBIajWsM)
 
+This is a JavaScript App for tracking the finances.
 
-Вам необходимо разработать приложение для 
-управления финансами.
+App has following functionality:
 
-Сервис предполагает следующий функционал:
+1. **Registration.** Registers new user in an application. 
 
-1. **Регистрация.** Позволяет зарегистрировать нового пользователя в системе. 
-Для обеспечения работоспособности данной функции необходимо реализовать следующие 
-структуры: Sidebar.js, Modal.js, AsyncForm.js, RegisterForm.js, User.js, createRequest.js.
+2. **Authorization.** Authorizes user in an application.
 
-2. **Авторизация.** Позволяет авторизовать пользователя в системе. Для обеспечения работоспособности 
-данной функции необходимо реализовать следующие структуры: Sidebar.js, Modal.js, AsyncForm.js, 
-LoginForm.js, User.js, createRequest.js.
+3. **Log Out.** Logs out user from an application.
 
-3. **Выход.** Позволяет деавторизовать пользователя в системе. Для обеспечения работоспособности 
-данной функции необходимо реализовать следующие структуры: Sidebar.js, User.js, createRequest.js.
+4. **Creating account.** 
 
-4. **Создание счетов.** Для обеспечения работоспособности данной функции необходимо 
-реализовать следующие структуры: AccountsWidget.js, TransactionsPage.js, Modal.js, 
-AsyncForm.js, CreateAccountForm.js, Entity.js, Account.js, createRequest.js.
+5. **Deleting account.**
 
-5. **Удаление счетов.** Для обеспечения работоспособности данной функции необходимо реализовать 
-следующие структуры: TransactionsPage.js, Entity.js, Account.js, createRequest.js.
+6. **Creating a transactions.** 
 
-6. **Создание транзакций.** Для обеспечения работоспособности данной функции необходимо 
-реализовать следующие структуры: TransactionsWidget.js, Modal.js, AsyncForm.js, 
-CreateTransactionForm.js, Entity.js, Transaction.js, createRequest.js.
+7. **Deleting transactions.**
 
-7. **Удаление транзакций.** Для обеспечения работоспособности данной функции необходимо реализовать 
-следующие структуры: TransactionsPage.js, Entity.js, Transaction.js, createRequest.js.
+## How to start
 
-У вас уже готова HTML и CSS разметка. Ваша задача - реализация JavaScript-логики.
+To start an app the local server needed "http://localhost:8000". 
+[How to run local server](./md/server.md)
 
-Существующая файловая структура проекта предусматривает разделение управляющей логики на графический интерфейс и API.
+To run server use the following command `npm run start`. In this case the server runs using `nodemon` starting the file `index.js`
 
-Например, функция регистрации нового пользователя в системе, требуется при нажатии на кнопку "Регистрация" 
-боковой панели (Sidebar.js), что бы обеспечить открытие модального окна с соответствующей формой. Далее требуется, 
-при нажатии кнопки "Регистрация" данной формы, выполнить оправку данных из формы регистрации на сервер 
-с помощью метода User.register() и при получении положительного ответа от сервера установить состояние 
-App.setState( 'user-logged' ) и закрыть модальное окно регистрации.
+While connected to local server the working directory is *public/js*.
 
-## С чего начать
-
-Выполняйте работу по шагам, описанным 
-в разделе «Основные задачи».
-
-Ориентируйтесь на описание шагов, а также на комментарии
-в коде каждого файла.
-
-Для реализации работы необходимо развернуть локальный сервер по адресу "http://localhost:8000". Описание по запуску локального сервера и серверной логики можете найти в [файле](./md/server.md)
-
-При работе с локальным сервером рабочая директория *public/js*.
-
-## Основные задачи
-
-Выполняйте данные задачи по порядку:
-
-1. [Разработка API для взаимодействия с Backend](./md/api.md)
-2. Разработка пользовательского интерфейса
-    1. [Кнопка управления боковой колонкой](./md/sidebar-toggle.md) 
-    2. [Управление окнами](./md/modals.md)
-    3. [Управление формами](./md/async-forms.md)
-    4. [Обработка нажатий на кнопки бокового меню](./md/sidebar-links.md)
-3. Взаимодействие API с пользовательским интерфейсом
-    1. [Регистрация](./md/register.md)
-    2. [Авторизация](./md/login.md)
-    2. [Отображение информации о пользователе](./md/user-widget.md)
-    3. [Создание новых счетов](./md/create-accounts.md)
-    4. [Создание новых транзакций (доход/расход)](./md/create-transactions.md)
-    5. [Отображение страницы транзакций при выборе счёта](./md/display-transactions.md)
-
-## Файловая структура
-
-Для удобства работы весь проект разбит на файлы,
-каждый из которых в конченом счете будет 
-занимать от 5 до 100 строк. В каждом файле содержится только
-один класс, что упрощает навигацию по проекту.
-
-Для более объемного понимания работы приложения,
-рекомендуется изучить поведение приложения начиная с файла
-*public/js/App.js* (он уже полностью для Вас написан и вносить в него правки не нужно).
+## Files structure:
 
 - js/
-    - __api/__ (Связь с сервером, сетевые запросы)
-        - __Account.js__ (управление счетами)
-        - __createRequest.js__ (доработка XHR, запросы к серверу и получение ответов)
-        - __Entity.js__ (Базовый класс для счетов, пользователей и расходов/доходов)
-        - __Transaction.js__ (управление доходами и расходами пользователя)
-        - __User.js__ (регистрация/авторизация/вход в приложение)
+    - __api/__ (connection with server, API requests)
+        - __Account.js__ (manage the accounts)
+        - __createRequest.js__ (API requests, responses)
+        - __Entity.js__ (Basic class for accounts, users и incomes/expenses)
+        - __Transaction.js__ (manages income and expenses)
+        - __User.js__ (registration/authorization/logging in)
     - ui/
-        - forms/ (формы приложения)
-            - __AsyncForm.js__ (Базовый класс для всех форм. Используется преимущественно во всплывающих окнах)
-            - __CreateAccountForm.js__ (форма создания нового счёта)
-            - __CreateTransactionForm.js__ (форма создания нового расхода/дохода)
-            - __LoginForm.js__ (форма входа)
-            - __RegisterForm.js__ (форма регистрации)
-        - pages/ (страницы приложения)
-            - __TransactionPage.js__ (страница расходов и доходов конкретного счёта)
+        - forms/ (app forms)
+            - __AsyncForm.js__ (Basic class for all form. Uses mostly for modal windows)
+            - __CreateAccountForm.js__ (form for creating a new account)
+            - __CreateTransactionForm.js__ (form for creating a new income/expense)
+            - __LoginForm.js__ (log in form)
+            - __RegisterForm.js__ (registration form)
+        - pages/ (app pages)
+            - __TransactionPage.js__ (page of transactions of particular account)
         - widgets/
-            - __AccountsWidget.js__ (виджет управления счетами)
-            - __TransactionsWidget.js__ (виджет управления расходами и доходами)
-            - __UserWidget.js__ (виджет текущего пользователя)
-        - __Modal.js__ (базовый класс для всех всплывающих окон)
-        - __Sidebar.js__ (класс управления боковой колонкой)
-    - __App.js__ (класс приложения)
+            - __AccountsWidget.js__ (widget for managing accounts)
+            - __TransactionsWidget.js__ (widget for managing transactions)
+            - __UserWidget.js__ (widget for current user)
+        - __Modal.js__ (basic class for all modal windows)
+        - __Sidebar.js__ (class for side window)
+    - __App.js__ (App class)
     
-## Формат сдачи
-
-Сделайте Fork репозитория с дипломным заданием.
-
-Предоставьте Вашему дипломному руководителю ссылку на GitHub с доработанным проектом.
-
-## Как правильно задавать вопросы дипломному руководителю?
-
-**Что следует делать, чтобы все получилось:**
-
--   Попробовать найти ответ сначала самому в интернете. Ведь, именно это скилл поиска ответов пригодится тебе на первой работе. И только после этого спрашивать дипломного руководителя
--   В одном вопросе должна быть заложена одна проблема
--   По возможности, прикреплять к вопросу скриншоты и стрелочкой показывать где не получается. Программу для этого можно скачать здесь https://app.prntscr.com/ru/
--   По возможности, задавать вопросы в комментариях к коду.
--   Начинать работу над дипломом как можно раньше! Чтобы было больше времени на правки.
--   Делать диплом по-частям, а не все сразу. Иначе, есть шанс, что нужно будет все переделывать :)
-
-**Что следует делать, чтобы ничего не получилось:**
-
--   Писать вопросы вида “Ничего не работает. Не запускается. Всё сломалось.”
--   Откладывать диплом на потом.
--   Ждать ответ на свой вопрос моментально. Дипломные руководители - работающие разработчики, которые занимаются, кроме преподавания, своими проектами. Их время ограничено, поэтому постарайтесь задавать правильные вопросы, чтобы получать быстрые ответы!
