@@ -4,7 +4,10 @@
 
 Video walkthrough (click the image):
 
-[![BHJ Diploma](https://img.youtube.com/vi/zXOyBIajWsM/0.jpg)](https://www.youtube.com/watch?v=zXOyBIajWsM)
+<!-- [![BHJ Diploma](https://img.youtube.com/vi/zXOyBIajWsM/0.jpg)](https://www.youtube.com/watch?v=zXOyBIajWsM) -->
+
+https://user-images.githubusercontent.com/94207798/187534973-711c8d40-f58c-4733-80e4-5eac1ef94679.mp4
+
 
 This is a JavaScript App for tracking the finances.
 
